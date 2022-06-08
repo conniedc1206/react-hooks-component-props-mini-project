@@ -1,7 +1,9 @@
 import blogData from "../data/blog";
 import Header from "./Header";
 import About from "./About";
-console.log(blogData);
+import ArticleList from "./ArticleList"
+
+//console.log(blogData);
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <About 
       image={blogData.image}
       about={blogData.about}/>
+      <ArticleList posts={blogData.posts}/>
     </div>
   );
 }
